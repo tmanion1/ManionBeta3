@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notekeeper</title>
+<meta name="viewport" content="width=device-width, initialscale=1">
+<link rel="stylesheet" href="Notekeeper.min.css" />
+<link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="application.js"></script>
+<link rel="stylesheet" 
+      href="jquery.mobile-1.4.5.min.css" />
+<script type="javascript" 
+        src="jquery-2.2.4.min.js">
+</script>
+<script type="javascript" 
+        src="jquery.mobile-1.4.5.min.js">
+</script>
+</head>
+<body>
+
+	<div data-role="header">
+    <div data-role="navbar" data-iconpos="left">
+		  <ul>
+		    <li><a href="#" class="ui-btn-active">To Do</a></li>
+        <li><a href="courses.html">Courses</a></li>
+		    <li><a href="faculty.html">Professors</a></li>
+        <li><a href="salisbury.html">Location</a></li>
+		  </ul>
+	  </div>
+	</div>
+  
+  <div role="main" class="ui-content">
+  
+		<form>
+			<div class="ui-field-contain">
+				<input id="title" type="text" placeholder="New assignment" />
+			</div>
+      <div class="ui-field-contain">
+				<input id="taskDate" type="text" placeholder="Due Date" />
+			</div>
+			<div class="ui-field-contain">
+				<input id="note" type="text" placeholder="Note related to new assignment" />
+			</div>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<input id="btnNoThanks" type="submit" value="No Thanks" />
+				</div>
+				<div class="ui-block-b">
+					<input id="btnAddNote" type="button" value="Add Note" />
+				</div>
+			</div>
+		</form>
+
+		<ul id="notesList" data-role="listview" data-inset="true"></ul>
+    
+    </div>
+
+	<div data-role="footer">
+		<h4>My Salisbury App</h4>
+	</div>
+
+</body>
+</html>
